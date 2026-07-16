@@ -25,10 +25,10 @@ pnpm build      # prerender / and /cake into dist/client
 
 ## Deploy
 
-Copy `.env.example` to `.env.local` and fill in the values.
-
 ```sh
-export CLOUDFLARE_API_TOKEN=$(grep CLOUDFLARE_TOKEN_API .env.local | cut -d= -f2)
-export CLOUDFLARE_ACCOUNT_ID=$(grep CLOUDFLARE_ACCOUNT_ID .env.local | cut -d= -f2)
 pnpm run deploy
 ```
+
+Auth either via `wrangler login`, or copy `.env.example` to `.env.local` and
+fill in the values — the deploy script loads `.env` / `.env.local`
+automatically.

@@ -10,7 +10,7 @@ Use **pnpm** (not bun/npm).
 ```sh
 pnpm dev          # dev server
 pnpm build        # vite build + prerender into dist/client
-pnpm run deploy   # build + wrangler deploy (env exports first — see README "Deploy")
+pnpm run deploy   # build + wrangler deploy (auto-loads .env/.env.local, or wrangler login)
 ```
 
 ## Layout
