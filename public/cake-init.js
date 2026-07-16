@@ -89,6 +89,9 @@
     applyFilter($(this).attr('data-filter'))
     history.replaceState(null, '', $(this).attr('href'))
     $(this).closest('.dropdown').removeClass('open')
+    // On mobile, collapse the menu so the filtered grid is visible
+    $('.header-row-3 .navbar-collapse').removeClass('in')
+    $('.navbar-toggle').addClass('collapsed').attr('aria-expanded', 'false')
   })
 
   // Search icon toggle (original: bootstrap dropdown + focus timeout)
@@ -121,7 +124,10 @@
 
   // Mobile navbar collapse (original: bootstrap.js)
   $('.navbar-toggle').on('click', function () {
-    $('.header-row-3 .navbar-collapse').toggleClass('in')
+    var open = $('.header-row-3 .navbar-collapse')
+      .toggleClass('in')
+      .hasClass('in')
+    $(this).toggleClass('collapsed', !open).attr('aria-expanded', open)
   })
 
   // Mobile dropdown toggle
