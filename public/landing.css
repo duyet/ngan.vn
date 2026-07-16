@@ -11,14 +11,14 @@ body.landing {
   min-height: 100vh;
 }
 
-.paper {
+.landing-center {
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.paper-logo img {
+.landing-logo img {
   width: 300px;
   max-width: 80%;
   height: auto;

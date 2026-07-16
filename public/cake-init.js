@@ -83,6 +83,11 @@
     }
   })
 
+  function setMenuOpen(open) {
+    $('.header-row-3 .navbar-collapse').toggleClass('in', open)
+    $('.navbar-toggle').toggleClass('collapsed', !open).attr('aria-expanded', open)
+  }
+
   // Nav dropdown categories filter in place when already on /cake
   $('.navbar-nav .dropdown-menu').on('click', 'a[data-filter]', function (event) {
     event.preventDefault()
@@ -90,8 +95,7 @@
     history.replaceState(null, '', $(this).attr('href'))
     $(this).closest('.dropdown').removeClass('open')
     // On mobile, collapse the menu so the filtered grid is visible
-    $('.header-row-3 .navbar-collapse').removeClass('in')
-    $('.navbar-toggle').addClass('collapsed').attr('aria-expanded', 'false')
+    setMenuOpen(false)
   })
 
   // Search icon toggle (original: bootstrap dropdown + focus timeout)
@@ -124,10 +128,7 @@
 
   // Mobile navbar collapse (original: bootstrap.js)
   $('.navbar-toggle').on('click', function () {
-    var open = $('.header-row-3 .navbar-collapse')
-      .toggleClass('in')
-      .hasClass('in')
-    $(this).toggleClass('collapsed', !open).attr('aria-expanded', open)
+    setMenuOpen(!$('.header-row-3 .navbar-collapse').hasClass('in'))
   })
 
   // Mobile dropdown toggle

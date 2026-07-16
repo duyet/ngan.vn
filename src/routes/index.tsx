@@ -10,8 +10,8 @@ export const Route = createFileRoute('/')({
 
 function LandingPage() {
   return (
-    <div className="paper">
-      <a href="/cake" className="paper-logo">
+    <div className="landing-center">
+      <a href="/cake" className="landing-logo">
         <img
           src="/wp-content/uploads/2019/09/logo-small.png"
           alt="Ngan.vn — Cakes & Sweets"
