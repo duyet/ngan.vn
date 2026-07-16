@@ -111,32 +111,6 @@ function CakePage() {
         <div className="container">
           {/* Header */}
           <div className="header">
-            {/* Header Row 1 */}
-            <div className="header-row-1 open">
-              <div className="row">
-                <div className="col-sm-6 header-row-1-left">
-                  <div className="header-widget widget widget_nav_menu">
-                    <div className="menu-top-menu-container">
-                      <ul id="menu-top-menu" className="menu">
-                        <li className="menu-item">
-                          <a href="http://facebook.com/me.ngan.vn">
-                            <img src="/theme/assets/icon/facebook.svg" className="top-header-icon" alt="Facebook" />
-                          </a>
-                        </li>
-                        <li className="menu-item">
-                          <a href="http://instagram.com/nganluu.nn">
-                            <img src="/theme/assets/icon/instagram.svg" className="top-header-icon" alt="Instagram" />
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-sm-6 header-row-1-right"></div>
-              </div>
-            </div>
-            {/* /Header Row 1 */}
-
             {/* Header Row 2 */}
             <div className="header-row-2">
               <div className="logo">
@@ -191,6 +165,16 @@ function CakePage() {
                     </li>
                     <li className="menu-item">
                       <a href="/">Blog</a>
+                    </li>
+                    <li className="menu-item social-menu-item">
+                      <a href="http://facebook.com/me.ngan.vn">
+                        <img src="/theme/assets/icon/facebook.svg" alt="Facebook" />
+                      </a>
+                    </li>
+                    <li className="menu-item social-menu-item">
+                      <a href="http://instagram.com/nganluu.nn">
+                        <img src="/theme/assets/icon/instagram.svg" alt="Instagram" />
+                      </a>
                     </li>
                     <li className="search">
                       <a href="#main-search" id="toggle-main_search" data-toggle="dropdown">

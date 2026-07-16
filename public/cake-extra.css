@@ -22,13 +22,26 @@ body.custom-background {
 }
 .farewell-banner p {
   margin: 0;
-  font-family: 'Caveat', cursive;
-  font-size: 20px;
-  line-height: 1.45;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
   color: #000;
 }
 .farewell-banner .farewell-heart {
   color: deeppink;
+}
+
+/* Social icons inside the nav bar */
+.navbar-nav > li.social-menu-item > a {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+.navbar-nav > li.social-menu-item img {
+  height: 22px;
+  width: 22px;
+  display: block;
 }
 
 /* Desktop hover dropdown (original used smartmenus.js) */

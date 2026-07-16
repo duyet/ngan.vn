@@ -30,7 +30,7 @@ function LandingPage() {
 
       <main className="paper-body">
         <article className="letter">
-          <div className="letter-date">Hà Nội, 2026</div>
+          <div className="letter-date">2026</div>
           <h1 className="letter-title">Gửi bạn thân mến,</h1>
           <p>
             Cảm ơn bạn đã cùng đồng hành với ngan.vn trong suốt những năm vừa
@@ -45,7 +45,7 @@ function LandingPage() {
         </div>
 
         <a href="/cake" className="cake-link">
-          Xem bộ sưu tập Cakes &amp; Sweets →
+          Cakes &amp; Sweets →
         </a>
       </main>
 
