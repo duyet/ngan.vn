@@ -251,7 +251,6 @@ function CakePage() {
                                   className="img-responsive wp-post-image"
                                   alt={item.alt}
                                   decoding="async"
-                                  loading="lazy"
                                   srcSet={relSrcset(item.srcset)}
                                   sizes={`(max-width: ${item.width}px) 100vw, ${item.width}px`}
                                 />
@@ -301,6 +300,16 @@ function CakePage() {
         <div className="footer-copyright">
           <ul className="credit">
             <li>
+              <a
+                href="//www.dmca.com/Protection/Status.aspx?id=f3eceade-9da2-461b-96d9-8715e5f8a24c"
+                title="DMCA.com Protection Status"
+                className="dmca-badge"
+              >
+                <img
+                  src="//images.dmca.com/Badges/dmca-badge-w150-5x1-01.png?ID=f3eceade-9da2-461b-96d9-8715e5f8a24c"
+                  alt="DMCA.com Protection Status"
+                />
+              </a>{' '}
               <a href="/">
                 (c) ngan.vn with <span style={{ color: '#ff9112' }}>❤</span>
               </a>
