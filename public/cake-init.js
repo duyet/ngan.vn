@@ -5,30 +5,75 @@
 
   var $grid = $('.portfolio-masonry')
 
-  // Magnific Popup — identical options to the original site
-  $('.portfolio-gallery-set').magnificPopup({
-    type: 'image',
-    removalDelay: 300,
-    mainClass: 'mfp-fade mfp-with-zoom',
-    gallery: { enabled: true },
-    image: {
-      // Title + note under the zoomed image
-      titleSrc: function (item) {
-        return item.el.attr('title') || ''
+  // Magnific Popup — same options as the original site, but each item opens
+  // its own gallery: the grid image plus the extra photos the old WP detail
+  // page had (data-variants, extracted from the backup).
+  $('.portfolio-content').on('click', '.portfolio-gallery-set', function (event) {
+    event.preventDefault()
+    var $link = $(this)
+    var $thumb = $link.closest('.portfolio-item-content').find('.item-thumbnail img')
+    var title = $link.attr('title') || ''
+    var variants = $link.data('variants')
+    if (!variants || !variants.length) {
+      variants = [{ src: $link.attr('href'), thumb: $link.attr('href') }]
+    }
+
+    function markActive(mfp) {
+      mfp.container
+        .find('.mfp-thumb')
+        .removeClass('active')
+        .eq(mfp.index)
+        .addClass('active')
+    }
+
+    $.magnificPopup.open({
+      items: variants.map(function (v) {
+        return { src: v.src }
+      }),
+      type: 'image',
+      removalDelay: 300,
+      mainClass: 'mfp-fade mfp-with-zoom',
+      gallery: { enabled: true },
+      image: {
+        // Title + note under the zoomed image
+        titleSrc: function () {
+          return title
+        },
       },
-    },
-    zoom: {
-      enabled: true,
-      duration: 300,
-      easing: 'ease-in-out',
-      opener: function (openerElement) {
-        // Zoom from the grid thumbnail, not the hidden icon
-        var $thumb = openerElement
-          .closest('.portfolio-item-content')
-          .find('.item-thumbnail img')
-        return $thumb.length ? $thumb : openerElement
+      zoom: {
+        enabled: true,
+        duration: 300,
+        easing: 'ease-in-out',
+        opener: function () {
+          // Zoom from the grid thumbnail, not the hidden icon
+          return $thumb.length ? $thumb : $link
+        },
       },
-    },
+      callbacks: {
+        // Mini-thumbnail strip for jumping between variants
+        open: function () {
+          if (variants.length < 2) return
+          var mfp = this
+          var $strip = $('<div class="mfp-thumb-strip"></div>')
+          $strip.on('click', function (e) {
+            e.stopPropagation() // don't let the overlay close the popup
+          })
+          variants.forEach(function (v, i) {
+            $('<img class="mfp-thumb" alt="" />')
+              .attr('src', v.thumb)
+              .on('click', function () {
+                mfp.goTo(i)
+              })
+              .appendTo($strip)
+          })
+          mfp.container.append($strip)
+          markActive(mfp)
+        },
+        change: function () {
+          markActive(this)
+        },
+      },
+    })
   })
 
   // Isotope masonry — identical options to the original site

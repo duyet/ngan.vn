@@ -194,6 +194,12 @@ function CakePage() {
                                   title={item.title}
                                   href={rel(item.zoom ?? item.src)}
                                   className="portfolio-gallery-set"
+                                  data-variants={JSON.stringify(
+                                    item.variants.map((v) => ({
+                                      src: rel(v.src),
+                                      thumb: rel(v.thumb),
+                                    })),
+                                  )}
                                 >
                                   <img src="/theme/assets/icon/zoom-in.svg" className="zoom_icon" alt="" />
                                 </a>
