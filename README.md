@@ -1,5 +1,9 @@
 # ngan.vn
 
+<p align="center">
+  <img src="public/wp-content/uploads/2019/09/logo-small.png" alt="Ngan.vn — Cakes & Sweets" width="300">
+</p>
+
 Static rebuild of [ngan.vn](https://ngan.vn) — migrated from WordPress to
 [TanStack Start](https://tanstack.com/start), fully prerendered and deployed to
 Cloudflare Workers as static assets.
