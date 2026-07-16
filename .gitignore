@@ -19,3 +19,6 @@ src/routeTree.gen.ts
 # Misc
 .DS_Store
 *.log
+
+# Session state
+.claude/
