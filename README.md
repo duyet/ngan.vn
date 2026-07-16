@@ -10,8 +10,8 @@ and deployed to Cloudflare Workers as static assets.
 - `/cake` — the original "Cakes & Sweets" gallery, reproduced 1:1 from the
   WordPress site on desktop: same theme CSS (`public/theme/`), isotope masonry
   grid, category filters, Magnific Popup zoom with title, plus the farewell
-  letter card under the header. The mobile menu is redesigned (white sliding
-  panel, hamburger/X toggle) in `public/cake-extra.css`.
+  letter card under the header. The nav menu was removed — the header is just
+  the logo; filtering happens via the tabs above the grid.
 
 Old WordPress URLs (post pages, category pages, `/blog/`) are 301-redirected
 via `public/_redirects`.

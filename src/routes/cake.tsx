@@ -14,7 +14,6 @@ export const Route = createFileRoute('/cake')({
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Raleway:200' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Caveat|Dancing+Script|Noto+Serif:400,400i,700&subset=vietnamese' },
       { rel: 'stylesheet', href: '/theme/assets/css/bootstrap.min.css' },
-      { rel: 'stylesheet', href: '/theme/assets/css/jquery.smartmenus.bootstrap.css' },
       { rel: 'stylesheet', href: '/theme/assets/css/font-awesome.min.css' },
       { rel: 'stylesheet', href: '/theme/assets/css/magnific-popup.css' },
       { rel: 'stylesheet', href: '/theme/style.css' },
@@ -49,16 +48,6 @@ const FILTERS = [
   { filter: '.category-banh-mau-khac', label: 'Bánh mẫu khác' },
   { filter: '.category-banh-mau-don-gian', label: 'Bánh mẫu đơn giản' },
   { filter: '.category-cupcake', label: 'Cupcake' },
-]
-
-const NAV_CATEGORIES = [
-  { slug: 'banh-hoa', label: 'Bánh hoa' },
-  { slug: 'banh-bup-be', label: 'Bánh búp bê' },
-  { slug: 'banh-trang-tri-hinh-ve', label: 'Bánh trang trí hình vẽ' },
-  { slug: 'banh-tang-banh-cuoi', label: 'Bánh tầng, bánh cưới' },
-  { slug: 'banh-mau-khac', label: 'Bánh mẫu khác' },
-  { slug: 'banh-mau-don-gian', label: 'Bánh mẫu đơn giản' },
-  { slug: 'cupcake', label: 'Cupcake' },
 ]
 
 const LEGACY_SCRIPTS = [
@@ -121,68 +110,6 @@ function CakePage() {
               </div>
             </div>
             {/* /Header Row 2 */}
-
-            {/* Header Row 3 */}
-            <div className="header-row-3">
-              <nav className="navbar navbar-default">
-                <div className="navbar-header">
-                  <button
-                    type="button"
-                    className="navbar-toggle collapsed"
-                    data-toggle="collapse"
-                    data-target=".header-row-3 .navbar-collapse"
-                    aria-expanded="false"
-                  >
-                    <span className="sr-only">Toggle Navigation</span>
-                    <span className="icon-bar"></span>
-                    <span className="icon-bar"></span>
-                    <span className="icon-bar"></span>
-                  </button>
-                </div>
-                <div className="navbar-collapse collapse">
-                  <ul id="menu-home-menu" className="nav navbar-nav">
-                    <li className="menu-item menu-item-home current-menu-item current_page_item menu-item-has-children dropdown active">
-                      <a href="/cake" data-toggle="dropdown" className="dropdown-toggle" aria-haspopup="true">
-                        Gallery <span className="caret"></span>
-                      </a>
-                      <ul role="menu" className="dropdown-menu">
-                        {NAV_CATEGORIES.map((c) => (
-                          <li key={c.slug} className="menu-item">
-                            <a href={`/cake?filter=${c.slug}`} data-filter={`.category-${c.slug}`}>
-                              {c.label}
-                            </a>
-                          </li>
-                        ))}
-                      </ul>
-                    </li>
-                    <li className="menu-item">
-                      <a href="/">Blog</a>
-                    </li>
-                    <li className="menu-item social-menu-item">
-                      <a href="http://facebook.com/me.ngan.vn">
-                        <img src="/theme/assets/icon/facebook.svg" alt="Facebook" />
-                      </a>
-                    </li>
-                    <li className="menu-item social-menu-item">
-                      <a href="http://instagram.com/nganluu.nn">
-                        <img src="/theme/assets/icon/instagram.svg" alt="Instagram" />
-                      </a>
-                    </li>
-                    <li className="search">
-                      <a href="#main-search" id="toggle-main_search" data-toggle="dropdown">
-                        <i className="fa fa-search"></i>
-                      </a>
-                      <div className="dropdown-menu main_search">
-                        <form name="main_search" method="get" action="/cake">
-                          <input type="text" name="s" className="form-control" placeholder="Type here" />
-                        </form>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
-            </div>
-            {/* /Header Row 3 */}
           </div>
           {/* /Header */}
 
