@@ -2,6 +2,16 @@
 /wp-content/uploads/*
   Cache-Control: public, max-age=31536000, immutable
 
-# Theme CSS/JS (unversioned paths) — one day, revalidate after
+# Vite bundles are content-hashed — safe to cache forever
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Theme is verbatim from the WP backup, never edited — cache forever
 /theme/*
-  Cache-Control: public, max-age=86400
+  Cache-Control: public, max-age=31536000, immutable
+
+# Un-hashed and occasionally edited — cache briefly, then revalidate (ETag)
+/cake-extra.css
+  Cache-Control: public, max-age=300, must-revalidate
+/cake-init.js
+  Cache-Control: public, max-age=300, must-revalidate
