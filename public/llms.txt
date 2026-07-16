@@ -1,0 +1,10 @@
+# Ngan.vn
+
+> Ngan.vn - Cakes and Sweets. Chào đón bạn ghé thăm trang web của chúng mình - nơi chứa đựng những điều dễ thương và ngọt ngào.
+
+A gallery of handmade cakes and desserts, based in Vietnam.
+
+## Pages
+
+- [Home](https://ngan.vn/): Landing page
+- [Cake gallery](https://ngan.vn/cake): Gallery of cake designs and a farewell letter

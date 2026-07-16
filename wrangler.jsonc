@@ -3,13 +3,10 @@
   "name": "ngan-vn",
   "compatibility_date": "2026-07-01",
   "workers_dev": true,
-  // Custom domains — uncomment once the ngan.vn zone is ACTIVE on Cloudflare
-  // (registrar nameservers → jake/kay.ns.cloudflare.com). Attaching while the
-  // zone is pending fails the whole deploy.
-  // "routes": [
-  //   { "pattern": "ngan.vn", "custom_domain": true },
-  //   { "pattern": "www.ngan.vn", "custom_domain": true }
-  // ],
+  "routes": [
+    { "pattern": "ngan.vn", "custom_domain": true },
+    { "pattern": "www.ngan.vn", "custom_domain": true }
+  ],
   "observability": {
     "enabled": true
   },
