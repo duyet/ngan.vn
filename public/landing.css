@@ -1,16 +1,4 @@
-/* Landing page — paper letter, black / white / pink only. */
-
-:root {
-  --pink-soft: #ffcad2;
-  --pink: lightpink;
-  --pink-deep: deeppink;
-  --ink: #1a1a1a;
-  --ink-soft: #545454;
-}
-
-* {
-  box-sizing: border-box;
-}
+/* Landing page — blank white page, logo centered. */
 
 html,
 body {
@@ -20,156 +8,18 @@ body {
 
 body.landing {
   background: #ffffff;
-  color: var(--ink);
-  font-family: 'Noto Serif', serif;
-  -webkit-font-smoothing: antialiased;
   min-height: 100vh;
 }
 
 .paper {
-  max-width: 640px;
-  margin: 0 auto;
-  padding: 48px 24px 40px;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  text-align: center;
-}
-
-/* Header / logo — same deeppink hairline the old site wore */
-.paper-header {
-  width: 100%;
-  border-top: 1px solid var(--pink-deep);
-  padding-top: 36px;
+  justify-content: center;
 }
 
 .paper-logo img {
   width: 300px;
   max-width: 80%;
   height: auto;
-}
-
-/* The letter */
-.paper-body {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  padding: 40px 0;
-}
-
-.letter {
-  background: #ffffff;
-  border: 1px solid var(--ink);
-  outline: 1px solid var(--pink-soft);
-  outline-offset: 4px;
-  padding: 40px 36px 28px;
-  max-width: 480px;
-  text-align: left;
-}
-
-.letter-date {
-  font-size: 12px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--ink-soft);
-  margin-bottom: 18px;
-}
-
-.letter-title {
-  font-family: 'Dancing Script', 'Caveat', cursive;
-  font-weight: 400;
-  font-size: 34px;
-  margin: 0 0 16px;
-  color: var(--ink);
-}
-
-.letter p {
-  font-size: 16px;
-  line-height: 1.8;
-  color: var(--ink-soft);
-  margin: 0 0 14px;
-}
-
-.letter-signature {
-  font-family: 'Caveat', cursive;
-  font-size: 24px;
-  text-align: right;
-  color: var(--ink);
-  margin-top: 22px;
-}
-
-.heart {
-  color: var(--pink-deep);
-}
-
-.divider {
-  color: var(--pink);
-  font-size: 18px;
-  margin: 34px 0;
-  letter-spacing: 1em;
-}
-
-/* Link to the gallery */
-.cake-link {
-  display: inline-block;
-  font-family: 'Noto Serif', serif;
-  font-size: 14px;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--ink);
-  text-decoration: none;
-  background: var(--pink-soft);
-  border: 1px solid var(--pink);
-  padding: 14px 28px;
-  transition: background 0.2s ease, color 0.2s ease;
-}
-
-.cake-link:hover {
-  background: var(--ink);
-  color: #ffffff;
-  border-color: var(--ink);
-}
-
-/* Footer */
-.paper-footer {
-  width: 100%;
-  border-top: 1px solid var(--pink-soft);
-  padding-top: 20px;
-  font-size: 13px;
-}
-
-.social-link {
-  color: var(--ink-soft);
-  text-decoration: none;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  font-size: 11px;
-}
-
-.social-link:hover {
-  color: var(--pink-deep);
-}
-
-.dot {
-  color: var(--pink);
-  margin: 0 10px;
-}
-
-.copyright {
-  margin: 14px 0 0;
-  color: var(--ink-soft);
-  font-size: 12px;
-}
-
-@media (max-width: 480px) {
-  .paper {
-    padding: 28px 16px 32px;
-  }
-  .letter {
-    padding: 28px 22px 20px;
-  }
 }

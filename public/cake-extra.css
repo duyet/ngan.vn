@@ -13,22 +13,56 @@ body.custom-background {
   }
 }
 
-/* Farewell banner */
-.farewell-banner {
-  background: #ffcad2;
-  border-bottom: 1px solid lightpink;
-  padding: 12px 20px;
-  text-align: center;
+/* Farewell letter (moved from the landing page) */
+.farewell-letter {
+  background: #ffffff;
+  border: 1px solid #1a1a1a;
+  outline: 1px solid #ffcad2;
+  outline-offset: 4px;
+  padding: 40px 36px 28px;
+  max-width: 480px;
+  margin: 20px auto 50px;
+  text-align: left;
+  font-family: 'Noto Serif', serif;
 }
-.farewell-banner p {
-  margin: 0;
-  font-family: 'Lato', sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  color: #000;
+.farewell-letter .letter-date {
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #545454;
+  margin-bottom: 18px;
 }
-.farewell-banner .farewell-heart {
+.farewell-letter .letter-title {
+  font-family: 'Dancing Script', 'Caveat', cursive;
+  font-weight: 400;
+  font-size: 34px;
+  margin: 0 0 16px;
+  color: #1a1a1a;
+  text-transform: none;
+  letter-spacing: normal;
+}
+.farewell-letter p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #545454;
+  margin: 0 0 14px;
+}
+.farewell-letter .letter-signature {
+  font-family: 'Caveat', cursive;
+  font-size: 24px;
+  text-align: right;
+  color: #1a1a1a;
+  margin-top: 22px;
+}
+.farewell-letter .farewell-heart {
   color: deeppink;
+}
+@media (max-width: 480px) {
+  .farewell-letter {
+    padding: 28px 22px 20px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
 }
 
 /* Social icons inside the nav bar */

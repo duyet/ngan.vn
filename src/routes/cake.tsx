@@ -12,7 +12,7 @@ export const Route = createFileRoute('/cake')({
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat:400,700' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Lato:400,700,300,300italic,400italic,700italic' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Raleway:200' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Caveat' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Caveat|Dancing+Script|Noto+Serif:400,400i,700&subset=vietnamese' },
       { rel: 'stylesheet', href: '/theme/assets/css/bootstrap.min.css' },
       { rel: 'stylesheet', href: '/theme/assets/css/jquery.smartmenus.bootstrap.css' },
       { rel: 'stylesheet', href: '/theme/assets/css/font-awesome.min.css' },
@@ -99,14 +99,6 @@ function CakePage() {
 
   return (
     <>
-      <div className="farewell-banner">
-        <p>
-          Cảm ơn bạn đã cùng đồng hành với ngan.vn trong suốt những năm vừa
-          qua. Hẹn gặp lại các bạn ở một diện mạo mới trong hành trình mới nhé{' '}
-          <span className="farewell-heart">❤</span>
-        </p>
-      </div>
-
       <div className="main-wrapper">
         <div className="container">
           {/* Header */}
@@ -193,6 +185,18 @@ function CakePage() {
             {/* /Header Row 3 */}
           </div>
           {/* /Header */}
+
+          {/* Farewell letter (moved from the landing page) */}
+          <article className="farewell-letter">
+            <div className="letter-date">2026</div>
+            <h2 className="letter-title">Gửi bạn thân mến,</h2>
+            <p>
+              Cảm ơn bạn đã cùng đồng hành với ngan.vn trong suốt những năm vừa
+              qua. Hẹn gặp lại các bạn ở một diện mạo mới trong hành trình mới
+              nhé <span className="farewell-heart">❤</span>
+            </p>
+            <p className="letter-signature">— Ngân</p>
+          </article>
 
           <div className="blog-feed">
             <div className="row">
