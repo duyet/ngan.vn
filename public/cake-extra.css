@@ -1,0 +1,58 @@
+/* Styles WordPress used to inject inline, plus the farewell banner.
+   Loaded only on /cake, after /theme/style.css. */
+
+/* was: <style id="custom-background-css"> */
+body.custom-background {
+  background-color: #ffffff;
+}
+
+/* was: <style id="wp-custom-css"> */
+@media (max-width: 480px) {
+  .logo img.custom-logo {
+    width: 200px;
+  }
+}
+
+/* Farewell banner */
+.farewell-banner {
+  background: #ffcad2;
+  border-bottom: 1px solid lightpink;
+  padding: 12px 20px;
+  text-align: center;
+}
+.farewell-banner p {
+  margin: 0;
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+  line-height: 1.45;
+  color: #000;
+}
+.farewell-banner .farewell-heart {
+  color: deeppink;
+}
+
+/* Desktop hover dropdown (original used smartmenus.js) */
+@media (min-width: 768px) {
+  .navbar-nav > li.dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+}
+
+/* Floating Messenger button (original: floaty.js + floaty.css from rawgit) */
+#floaty_link .floaty {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  top: 30%;
+  left: 0;
+  z-index: 9999;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  background: #fff;
+  overflow: hidden;
+}
+#floaty_link .floaty img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}

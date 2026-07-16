@@ -1,0 +1,547 @@
+/* -------------------------------------------------
+  Large Screen. 
+---------------------------------------------------*/
+@media (min-width: 1367px) and (max-width: 1920px){
+.mobile-menu-area{
+  display: none;
+}
+
+}
+
+/* -------------------------------------------------
+  Laptop Screen 
+---------------------------------------------------*/
+@media (min-width: 1170px) and (max-width: 1366px) {
+.container {width:1200px}	
+.mobile-menu-area{
+  display: none;
+}
+.marg-area input{
+  margin-bottom: 50px;
+}
+.erika-slider-active .slick-slide img {
+  display: block;
+  width: 100%;
+}
+.erika-single-slider {
+  padding: 230px 0;
+}
+
+}
+
+/* -------------------------------------------------
+  Old Desktop
+---------------------------------------------------*/
+@media (min-width: 992px) and (max-width: 1169px) {
+.container {width:970px}
+.mobile-menu-area{
+  display: none;
+}
+.portfolio-column-count-4 .portfolio-item {
+  width: 33.3333%;
+}
+.portfolio-column-count-5 .portfolio-item {
+  width: 33.3333%;
+}
+.portfolio-column-count-1 .portfolio-item {
+  width: 50%;
+}
+.portfolio-fullwidth .portfolio-filter-wrap {
+  margin-left: 3%;
+}
+.marg-area input{
+  margin-bottom: 50px;
+}
+.erika-slider-active .slick-slide img {
+  display: block;
+  width: 100%;
+}
+.erika-single-slider {
+  padding: 230px 0;
+}
+.skill-content {
+  padding: 85px 0 80px 50px;
+}
+.call-to-action-area {
+  padding: 60px 0;
+}
+.breadcrumb-area {
+  padding: 80px 0;
+}
+.single-project-title {
+  font-size: 24px;
+  padding-bottom: 15px;
+}
+
+}
+
+
+/* -------------------------------------------------
+  Tablet Screen 
+---------------------------------------------------*/
+@media (min-width: 768px) and (max-width: 991px) {
+.container {width:750px}
+.portfolio-column-count-3 .portfolio-item {
+  width: 50%;
+}
+.portfolio-column-count-4 .portfolio-item {
+  width: 50%;
+}
+.portfolio-column-count-5 .portfolio-item {
+  width: 50%;
+}
+.portfolio-column-count-1 .portfolio-item {
+  width: 50%;
+}
+.portfolio-fullwidth .portfolio-filter-wrap {
+  margin-left: 4%;
+}
+.logo {
+  position: relative;
+  z-index: 2;
+}
+.cd-headline.clip .cd-words-wrapper {
+  display: block;
+}
+.static-dotted-bg .banner-static-content .cd-headline.clip .cd-words-wrapper {
+  display: inline-block;
+}
+.banner-static-content p {
+  width: 100%;
+}
+.banner-static-content h1 {
+  font-size: 30px;
+  line-height: 40px;
+}
+#particle-ground {
+  height: 400px;
+}
+.area-heading-style-two {
+  width: 80%;
+}
+.single-contact-option {
+  margin-bottom: 50px;
+}
+.marg-area input{
+  margin-bottom: 20px;
+}
+.marg-area:last-child input {
+  margin-bottom: 50px;
+}
+.breadcrumb-area {
+  padding: 60px 0;
+}
+.erika-standard-row {
+  padding: 80px 0;
+}
+.slider-style-2 .banner-static-content {
+  padding: 100px 0;
+}
+.erika-slider-active .slick-slide img {
+  display: block;
+  width: 100%;
+}
+.erika-slider-content p {
+  margin-bottom: 15px;
+}
+.erika-slider-content > h2 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.erika-single-slider {
+  padding: 170px 0;
+}
+.slide-one {
+  background: rgba(0, 0, 0, 0) url("../img/slider/6.jpg") repeat scroll center right / cover ;
+}
+#erika-map {
+  height: 400px;
+}
+.about-heading h1 {
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+.about-heading p {
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin: 0 0 30px;
+}
+.erika-standard-row.bg-1 {
+  padding: 150px 0;
+}
+.service-style-2 .col-md-4.col-sm-6:nth-child(-n+4) .single-service {
+  margin-bottom: 30px;
+}
+.col-lg-3.col-md-4.col-sm-6:nth-child(-n+2) .single-price-table {
+  margin-bottom: 30px;
+}
+.testimonial-wrapper .testimonial-wrapper blockquote {
+  border-left: medium none;
+  font-size: 15px;
+  margin: 0 0 20px;
+  padding: 10px 50px;
+}
+.skill-content {
+  padding: 80px 0;
+}
+.about-text-content h1 {
+  color: #fff;
+  font-size: 30px;
+}
+.single-portfolio-meta li span {
+  color: #444;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  width: 100%;
+}
+.single-project-title {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  text-transform: unset;
+}
+.slider-style-4 .banner-static-content {
+  padding: 109px 0;
+}
+.erika-slider-6 .cd-headline.clip .cd-words-wrapper {
+  display: inline-block;
+}
+.banner-static-content.erika-slider-6 h1 {
+  font-size: 35px;
+  letter-spacing: 3px;
+}
+.text-center.banner-static-content p {
+  width: 100%;
+}
+
+}
+
+/* -------------------------------------------------
+  Small Mobile
+---------------------------------------------------*/
+@media (max-width: 767px) {
+.container {width: 100%}	
+.erika-standard-row {
+  padding: 80px 0;
+}
+.portfolio-column-count-3 .portfolio-item {
+  width: 100%;
+}
+.portfolio-column-count-4 .portfolio-item {
+  width: 100%;
+}
+.portfolio-column-count-5 .portfolio-item {
+  width: 100%;
+}
+.portfolio-column-count-2 .portfolio-item {
+  width: 100%;
+}
+.logo {
+  position: relative;
+  z-index: 2;
+}
+.banner-static-content p {
+  width: 100%;
+}
+.cd-headline.clip .cd-words-wrapper {
+  display: block;
+}
+.banner-static-content h1 {
+  font-size: 28px;
+  letter-spacing: 3px;
+  line-height: 40px;
+}
+.text-left .portfolio-filter > li {
+  margin: 0 30px 15px 0;
+}
+.text-left .portfolio-filter > li:last-child {
+  margin: 0;
+}
+.pagination-area {
+  margin-top: 60px;
+}
+.text-center.banner-static-content p {
+  width: 100%;
+}
+.banner-static-content .cd-headline.clip .cd-words-wrapper {
+  display: inline-block;
+}
+#particle-ground {
+  height: 370px;
+}
+.breadcrumb-area {
+  padding: 50px 0;
+}
+.area-heading-style-two {
+  width: 100%;
+}
+.single-contact-option {
+  margin-bottom: 50px;
+}
+.marg-area input{
+  margin-bottom: 20px;
+}
+.marg-area:last-child input {
+  margin-bottom: 20px;
+}
+.footer-menu {
+  display: none;
+  margin-bottom: 20px;
+}
+.breadcrumb-style-two .breadcrumb-list {
+  display: inline-block;
+  float: left;
+}
+.breadcrumb-style-two .breadcrumb-content .page-cat {
+  margin: 0 0 10px;
+  width: 100%;
+}
+.breadcrumb-style-two {
+  padding: 50px 0;
+}
+#erika-map {
+  height: 300px;
+  width: 100%;
+}
+.blog-post {
+  margin-bottom: 30px;
+}
+.blog-masonry .blog-post {
+  margin-bottom: 0;
+}
+.slider-style-2 .banner-static-content {
+  padding: 80px 0;
+}
+.slider-style-2 {
+  background: #f1f1f1 none repeat scroll 0 0;
+  padding: 0;
+  position: relative;
+}
+.banner-static-content p {
+  font-size: 14px;
+  line-height: 24px;
+}
+.banner-static-content h1 {
+  font-size: 22px;
+  letter-spacing: 2px;
+  line-height: 30px;
+}
+.portfolio-fullwidth .portfolio-filter-wrap {
+  margin: auto;
+  width: 90%;
+}
+.portfolio-filter > li + li {
+  margin-left: 20px;
+}
+.erika-slider-active .slick-slide img {
+  width: auto;
+}
+.erika-single-slider {
+  padding: 150px 0;
+}
+.erika-slider-content > h2 {
+  font-size: 21px;
+}
+.erika-slider-content p {
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+.social-bookmark > li + li {
+  margin-left: 10px;
+}
+.message-box-area input {
+  float: left;
+}
+.about-heading h1 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.about-heading p {
+  margin: 0 0 30px;
+}
+.erika-standard-row.bg-1 {
+  padding: 120px 0;
+}
+.video-play-icon {
+  display: inline-block;
+  font-size: 30px;
+  height: 70px;
+  line-height: 70px;
+  width: 70px;
+}
+.video-play-icon i {
+  left: 3px;
+  position: relative;
+  top: 1px;
+}
+.col-md-4.col-sm-6:nth-child(-n+2) .single-member {
+  margin-bottom: 30px;
+}
+.service-style-2 .col-md-4.col-sm-6:nth-child(-n+5) .single-service {
+  margin-bottom: 30px;
+}
+.col-lg-3.col-md-4.col-sm-6:nth-child(-n+3) .single-price-table {
+  margin-bottom: 30px;
+}
+.testimonial-wrapper blockquote {
+  padding: 0;
+}
+.skill-content {
+  padding: 80px 0;
+}
+.call-to-text > h4 {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 8px;
+}
+.coll-to-btn a {
+  float: left;
+  margin-top: 15px;
+}
+.single-blog-post-area .blog-post-title {
+  line-height: 30px;
+}
+.post-meta span {
+  display: inline-block;
+  margin-bottom: 7px;
+  margin-right: 6px;
+  padding-right: 10px;
+}
+.post-meta {
+  margin-bottom: 20px;
+}
+.post-content > h4 {
+  font-size: 18px;
+  line-height: 28px;
+}
+.single-blog-post-area blockquote {
+  color: #555;
+  display: block;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: normal;
+  line-height: 25px;
+  margin: 0 0 35px 10px;
+  overflow: hidden;
+  padding: 15px;
+}
+.page-cat {
+  font-size: 20px;
+}
+
+.media-left {
+  display: block;
+  margin-bottom: 25px;
+  padding-right: 0;
+  text-align: center;
+  width: 100%;
+}
+.theme-comment-section .media-body {
+  margin-top: 0;
+  padding: 0 20px;
+  text-align: center;
+  width: 100%;
+}
+.theme-comment-section .media {
+  border: 1px solid #e5e5e5;
+  padding: 25px 0;
+}
+.input-field {
+  width: 100%;
+}
+.media-list li:last-child {
+  border-bottom: 1px solid #e5e5e5;
+  margin: 0;
+}
+.media-replay {
+  margin-left: 0;
+}
+.erika-news-letter button {
+  border: 1px solid #e5e5e5;
+  margin-top: 20px;
+}
+.erika-news-letter input[type="email"] {
+  width: 100%;
+}
+.panel-title {
+  color: inherit;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 23px;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-right: 10px;
+}
+.area-title {
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+.single-service {
+  padding: 0 20px;
+  text-align: center;
+}
+.about-text-content h1 {
+  color: #fff;
+  font-size: 24px;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+.not-found-content h3 {
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+.single-project-title {
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+}
+.related-project-slider .slick-prev, .related-project-slider .slick-next {
+  bottom: -55px;
+  top: auto;
+}
+.slider-style-4 .banner-static-content {
+  padding: 109px 0;
+}
+.banner-static-content.erika-slider-6 h1 {
+  font-size: 28px;
+  letter-spacing: 3px;
+}
+.contact-link {
+  display: block;
+}
+.text-center.banner-static-content p {
+  width: 100%;
+}
+#particle-ground {
+  height: 450px;
+}
+.static-dotted-bg .banner-static-content {
+  margin: auto;
+  width: 100%;
+}
+.text-center.banner-static-content p {
+  font-size: 14px;
+  line-height: 24px;
+}
+}
+
+/* -------------------------------------------------
+  Large Mobile :480px. 
+---------------------------------------------------*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container {width:450px}
+
+}
