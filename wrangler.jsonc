@@ -3,14 +3,10 @@
   "name": "ngan-vn",
   "compatibility_date": "2026-07-01",
   "workers_dev": true,
-  // Custom domains — uncomment once the ngan.vn zone is fully settled on
-  // Cloudflare. Zone shows "active" but attaching routes still fails the
-  // whole deploy (generic domains/records API error) — needs more time to
-  // propagate. Re-enable and verify with a manual `wrangler deploy` first.
-  // "routes": [
-  //   { "pattern": "ngan.vn", "custom_domain": true },
-  //   { "pattern": "www.ngan.vn", "custom_domain": true }
-  // ],
+  "routes": [
+    { "pattern": "ngan.vn", "custom_domain": true },
+    { "pattern": "www.ngan.vn", "custom_domain": true }
+  ],
   "observability": {
     "enabled": true
   },
